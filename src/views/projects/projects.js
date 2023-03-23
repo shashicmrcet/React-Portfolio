@@ -1,18 +1,24 @@
 import React from "react";
-import { Timeline, Events, UrlButton, ImageEvent, createTheme, themes } from "@merc/react-timeline";
+import {
+  Timeline,
+  Events,
+  UrlButton,
+  ImageEvent,
+  createTheme,
+  themes
+} from "@merc/react-timeline";
 import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card"
+import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 
 //Css file
-import './project.css'
+import "./project.css";
 
-//Projects 
-import ChatKharaMeal from "../../assets/img/projects/ChatKharaMeal-Website.png";
-import ExpenseTracker from "../../assets/img/projects/Expense-TrackerApp.png";
-import MusicList from "../../assets/img/projects/Music-List-App.png";
-import QuizApp from "../../assets/img/projects/QuizzApp-JavaScript.png";
-
+//Projects
+import Shopkart from "../../assets/img/projects/shopkart.png";
+import VisionEcoElectric from "../../assets/img/projects/visioneco.png";
+import Game from "../../assets/img/projects/game.png";
+import Education from "../../assets/img/projects/eduweb.png";
 
 //Skills
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
@@ -22,23 +28,22 @@ import L_REACT from "../../assets/img/skills/react.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
-import L_FIREBASE from "../../assets/img/skills/firebase-icon.svg"
-
+import L_FIREBASE from "../../assets/img/skills/firebase-icon.svg";
 
 // Custom timline theme
 const customTheme = createTheme(themes.default, {
   card: {
-    backgroundColor: '#efefef',
+    backgroundColor: "#efefef"
   },
   date: {
-    backgroundColor: '#ec4b4f',
+    backgroundColor: "#ec4b4f"
   },
   marker: {
-    borderColor: '#070d59',
+    borderColor: "#070d59"
   },
   timelineTrack: {
-    backgroundColor: '#ec4b4f',
-  },
+    backgroundColor: "#ec4b4f"
+  }
 });
 
 const ProjectTimeline = () => {
@@ -47,13 +52,13 @@ const ProjectTimeline = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline theme={customTheme}>
         <Events>
-          {/* //ChatKharaMeal */}
+          {/* //Shopkart */}
           <ImageEvent
-            date="30th Nov, 2020"
+            date="30th feb, 2022"
             className="text-center"
-            text="ChatKhara Meal"
-            src={ChatKharaMeal}
-            alt="Chatkhara meal"
+            text="ShopKart Site"
+            src={Shopkart}
+            alt="Shopkart Site"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -69,12 +74,16 @@ const ProjectTimeline = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is an E-Commerce website of savoury foods, which provides user online food shopping experience with various varieties.
+                        <strong>Description:</strong> This is an E-Commerce
+                        website, which provides user online shopping experience
+                        with various varieties.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Provide best quality of food in low price rate.</li>
-                          <li>Powered by Pure JavaScript and CSS</li>
+                          <li>
+                            Provide best quality of shopping in low price rate.
+                          </li>
+                          <li>Powered by Pure HTML, JavaScript and CSS</li>
                           <li>Respoisive Design</li>
                         </ul>
                         <hr />
@@ -120,30 +129,24 @@ const ProjectTimeline = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton
-                  href="https://adibaabid-team-malamjabba.github.io/ChatKharaMeal-Website/"
-                  target="_blank"
-                >
+                <UrlButton href="http://shopkart1.netlify.app" target="_blank">
                   SEE LIVE
                 </UrlButton>
-                <UrlButton
-                  href="https://github.com/AdibaAbid-Team-MalamJabba/ChatKharaMeal-Website"
-                  target="_blank"
-                >
+                <UrlButton href="http://shopkart1.netlify.app" target="_blank">
                   SOURCE CODE
                 </UrlButton>
               </div>
             </div>
           </ImageEvent>
 
-          {/* //ExpenseTracker */}
+          {/* //VisionEco Electric */}
 
           <ImageEvent
             date="18th July, 2020"
             className="text-center"
-            text="Expense Tracker App"
-            src={ExpenseTracker}
-            alt="ExpenseTracker"
+            text="VisionEco Electric App"
+            src={VisionEcoElectric}
+            alt="VisionEcoElectric"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -159,11 +162,14 @@ const ProjectTimeline = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is a Finance app to track your daily expenses and keep to up to date. User friendly and easy to use.
+                        <strong>Description:</strong> This is a Electric Vehicle
+                        booking website. User friendly and easy to use.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Keep up to date you about your daily expenses</li>
+                          <li>
+                            Keep searching and knowing about new vehicle launch
+                          </li>
                           <li>Powered by JavaScript, HTML and CSS.</li>
                           <li>Firebase firestore hosting and integration</li>
                         </ul>
@@ -232,30 +238,24 @@ const ProjectTimeline = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton
-                  href="https://expensetracker-1149f.web.app/"
-                  target="_blank"
-                >
+                <UrlButton href="https://visionecoelectric.in/" target="_blank">
                   SEE LIVE
                 </UrlButton>
-                <UrlButton
-                  href="https://github.com/AdibaAbid/Expense-TrackerApp"
-                  target="_blank"
-                >
+                <UrlButton href="https://visionecoelectric.in/" target="_blank">
                   SOURCE CODE
                 </UrlButton>
               </div>
             </div>
           </ImageEvent>
 
-          {/* QuizApp */}
+          {/* Eduweb */}
 
           <ImageEvent
             date="9th June, 2020"
             className="text-center"
-            text="Quiz App"
-            src={QuizApp}
-            alt="Quizz App"
+            text="Edcation App"
+            src={Education}
+            alt="Education App"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -271,12 +271,12 @@ const ProjectTimeline = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> Basic Quiz app, to test your computer knowledge. Also, The question and its options changed in every page reload.
+                        <strong>Description:</strong> Education website.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Test your basic computer knowledge </li>
-                          <li>API used for computer science quiz</li>
+                          <li>Check and learn all courses </li>
+                          <li>Many sections of courses</li>
                           <li>Powered by JavaScript, HTML and CSS.</li>
                         </ul>
                         <hr />
@@ -333,31 +333,24 @@ const ProjectTimeline = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton
-                  href="https://adibaabid.github.io/QuizzApp-JavaScript/"
-                  target="_blank"
-                >
+                <UrlButton href="https://studyzone.netlify.app" target="_blank">
                   SEE LIVE
                 </UrlButton>
-                <UrlButton
-                  href="https://github.com/AdibaAbid/QuizzApp-JavaScript"
-                  target="_blank"
-                >
+                <UrlButton href="https://studyzone.netlify.app" target="_blank">
                   SOURCE CODE
                 </UrlButton>
-          
               </div>
             </div>
           </ImageEvent>
 
-          {/* //MusicListApp */}
+          {/* //Game */}
 
           <ImageEvent
             date="9th June, 2020"
             className="text-center"
-            text="Music List App"
-            src={MusicList}
-            alt="MusicList App"
+            text="Game App"
+            src={Game}
+            alt="Game App"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -373,7 +366,8 @@ const ProjectTimeline = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> If you are a Music Lover!, then its the best app for you to collect your music collection in one place.
+                        <strong>Description:</strong> Play this Game and check
+                        your Accuracy to concentrate your Mind play.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
@@ -425,13 +419,13 @@ const ProjectTimeline = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://adibaabid.github.io/Music-List-App/"
+                  href="https://shashicmrcet.github.io/csb-vwoe97/"
                   target="_blank"
                 >
                   SEE LIVE
                 </UrlButton>
                 <UrlButton
-                  href="https://github.com/AdibaAbid/Music-List-Appt"
+                  href="https://shashicmrcet.github.io/csb-vwoe97/"
                   target="_blank"
                 >
                   SOURCE CODE
@@ -439,12 +433,10 @@ const ProjectTimeline = () => {
               </div>
             </div>
           </ImageEvent>
-
         </Events>
       </Timeline>
     </div>
-  )
-}
+  );
+};
 
-
-export default ProjectTimeline
+export default ProjectTimeline;
